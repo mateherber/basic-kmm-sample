@@ -1,0 +1,13 @@
+query ListPokemons {
+    pokemons(limit: 10000, offset: 0) {
+        count
+        next
+        previous
+        status
+        message
+        results {
+            name
+            artwork
+        }
+    }
+}
